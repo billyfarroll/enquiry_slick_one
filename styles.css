@@ -1,12 +1,10 @@
 body {
-	
-	font-family: 'Quicksand', sans-serif;
-	
-	}
+  background: white;
+  font-family: 'Quicksand', sans-serif;
+}
 
-section {
+ section {
   background: #5c6b75;
-  border-radius: 25px;
   margin: 60px auto 120px;
   border-top: 10px solid #c45e5e;
   text-align: center;
@@ -15,12 +13,11 @@ section {
   max-width: 1200px;
   font-size: 0.8em;
   color: white;
-  -webkit-box-shadow: 0px 6px 9px 0px #000000; 
-  box-shadow: 0px 4px 7px 0px #000000;
+  
 }
 /** Inside the section - form */
 form { 
-  width: 58.3333333333%;
+  width: 75.3333333333%;
   margin: 0 auto;
 }
 /** Inside the section - form */
@@ -28,7 +25,7 @@ form {
 form .field {
   width: 100%;
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 /** label sections - name, email, mobile and message **/
@@ -58,8 +55,8 @@ form .field label + span {
   color: white;
   display: block;
   position: absolute;
-  top: 12px;
-  left: 3.5%;
+  top: 14px;
+  left: 4.75%;
   font-size: 2em;
   -webkit-transition: all 333ms ease-in-out;
   -moz-transition: all 333ms ease-in-out;
@@ -74,7 +71,7 @@ form .field input[type=text],
 form .field textarea {
   border: none; /* user text */
   background: white;
-  width: 78.5%;
+  width: 100%;
   margin: 0;
   padding: 19px 0; /* user text */
   padding-left: 21.5%;
@@ -89,7 +86,7 @@ form .field textarea {
 /** MESSAGE **/
 form .field input[type=text]#msg,
 form .field textarea#msg {
-  height: 24px;
+  height: 65px;
   resize: none;
   -webkit-transition: all 333ms ease-in-out;
   -moz-transition: all 333ms ease-in-out;
@@ -175,6 +172,121 @@ form input[type=submit]:focus {
 }
 /** SUBMIT BUTTON when selected **/
 
+
+/** For MEDIUM **/
+
+@media only screen and (max-width: 990px) and (min-width: 768px) {
+  
+  form .field label {
+    
+    font-size: 1.74em;
+    padding-left: 2px;
+    padding-right: 2px;
+    
+  }
+  
+  form .field input[type=text],
+form .field textarea {
+  
+  width: 100%;
+  margin: 0;
+  padding: 18px 0; /* user text */
+  padding-left: 22%;
+  color: black; /* user text */
+  font-size: 1.3em; /* user text */
+  letter-spacing: 0.1em; /* user text */
+ 
+}
+  
+  form .field label + span {
+    
+    font-size: 1.8em;
+    left: 3.5%;
+    
+  }
+  
+  form { 
+  width: 85.3333333333%;
+  
+}
+  
+ form .field input[type=text]#msg,
+  form .field textarea#msg {
+    
+    height: 60px;
+    
+  }
+  
+}
+
+/** For MEDIUM **/
+
+/** Between MEDIUM & SMALL **/
+
+@media only screen and (max-width: 767px) and (min-width: 411px) {
+  
+  form .field label {
+    
+    font-size: 1.74em;
+    padding-left: 2px;
+    padding-right: 2px;
+    
+  }
+  
+  form .field input[type=text],
+form .field textarea {
+  
+  width: 100%;
+  margin: 0;
+  padding: 18px 0; /* user text */
+  padding-left: 30%;
+  color: black; /* user text */
+  font-size: 1.3em; /* user text */
+  letter-spacing: 0.1em; /* user text */
+ 
+}
+  
+  form .field label + span {
+    
+    font-size: 1.5em;
+    left: 6%;
+    top: 15px;
+    
+  }
+  
+  form { 
+  width: 85.3333333333%;
+  
+}
+  
+  /** Height of the message box**/
+ form .field input[type=text]#msg,
+  form .field textarea#msg {
+    
+    height: 60px;
+    
+  }
+   /** Height of the message box**/
+  
+  /** Width of the DONE box when user is finished **/
+  form .field input[type=text]:focus + label, form .field input[type=text].focused + label,
+form .field textarea:focus + label,
+form .field textarea.focused + label {
+  
+  width: 25%;
+  
+}
+ 
+/** Width of the message, email, and name boxes when user selects **/
+form .field:hover label {
+  width: 28%;
+  
+  }
+ 
+}
+/** Between MEDIUM & SMALL **/
+
+
 /** For SMALL **/
 
 @media only screen and (max-width: 410px) {
@@ -189,12 +301,12 @@ form input[type=submit]:focus {
   form .field input[type=text],
 form .field textarea {
   
-  width: 77.5%;
+  width: 100%;
   margin: 0;
   padding: 12px 0; /* user text */
-  padding-left: 25%;
+  padding-left: 22%;
   color: black; /* user text */
-  font-size: 1.4em; /* user text */
+  font-size: 1.13em; /* user text */
   letter-spacing: 0.1em; /* user text */
  
 }
@@ -207,64 +319,30 @@ form .field textarea {
   form .field label + span {
     
     font-size: 1em;
+    left: 3.5%;
+    top: 14px;
     
   }
+  
+  
   
   form .field input[type=text]#msg,
   form .field textarea#msg {
     
-    height: 21.25px;
+    height: 45px;
     
   }
+  
+  form .field input[type=text]:focus + label, form .field input[type=text].focused + label,
+form .field textarea:focus + label,
+form .field textarea.focused + label {
+  
+  width: 20%;
+  
+}
+  
+  
   
 }
 
 /** For SMALL **/
-
-/** For MEDIUM **/
-
-@media only screen and (max-width: 990px) and (min-width: 411px) {
-  
-  form .field label {
-    
-    font-size: 1.7em;
-    padding-left: 2px;
-    padding-right: 2px;
-    
-  }
-  
-  form .field input[type=text],
-form .field textarea {
-  
-  width: 78.5%;
-  margin: 0;
-  padding: 18px 0; /* user text */
-  padding-left: 22%;
-  color: black; /* user text */
-  font-size: 1.3em; /* user text */
-  letter-spacing: 0.1em; /* user text */
- 
-}
-  
-  form .field label + span {
-    
-    font-size: 1.8em;
-    left: 5%;
-    
-  }
-  
-  form { 
-  width: 85.3333333333%;
-  
-}
-  
- form .field input[type=text]#msg,
-  form .field textarea#msg {
-    
-    height: 21.25px;
-    
-  }
-  
-}
-
-/** For MEDIUM **/
